@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bali Travel & Tour Packages</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Swiper.js CSS (Untuk Slider Gambar) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Styling kustom untuk slider */
+    .swiper {
+      width: 100%;
+      height: 70vh;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold tracking-wide text-amber-600 flex items-center gap-2">
+        <i class="fa-solid fa-compass"></i>
+        <span>NUSA<span class="text-slate-800">TOUR</span></span>
+      </a>
+
+      <!-- Menu Utama (Desktop) -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+        <a href="#home" class="hover:text-amber-600 transition">Beranda</a>
+        <a href="#paket" class="hover:text-amber-600 transition">Paket Tur</a>
+        <a href="#keunggulan" class="hover:text-amber-600 transition">Tentang Kami</a>
+        <a href="#kontak" class="hover:text-amber-600 transition">Kontak</a>
+      </nav>
+
+      <!-- Tombol CTA WhatsApp -->
+      <div class="hidden md:block">
+        <a href="https://wa.me/6285726896443?text=Halo%20saya%20ingin%20tanya%20paket%20tour" 
+           target="_blank" 
+           class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-medium transition flex items-center gap-2 shadow-md hover:shadow-lg">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Hubungi Kami</span>
+        </a>
+      </div>
+
+      <!-- Toggle Menu Mobile -->
+      <button id="menu-btn" class="md:hidden text-2xl text-slate-700 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-4 pt-2 pb-6 space-y-3">
+      <a href="#home" class="block py-2 text-slate-600 hover:text-amber-600 font-medium">Beranda</a>
+      <a href="#paket" class="block py-2 text-slate-600 hover:text-amber-600 font-medium">Paket Tur</a>
+      <a href="#keunggulan" class="block py-2 text-slate-600 hover:text-amber-600 font-medium">Tentang Kami</a>
+      <a href="#kontak" class="block py-2 text-slate-600 hover:text-amber-600 font-medium">Kontak</a>
+      <a href="https://wa.me/6281234567890" target="_blank" class="block text-center bg-emerald-600 text-white py-2.5 rounded-lg font-medium">
+        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ==================== HERO IMAGE SLIDER ==================== -->
+  <section id="home" class="relative">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        
+        <!-- Slide 1 (Ganti URL Gambar di style attribute) -->
+        <div class="swiper-slide relative" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80');">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-4">
+            <div class="max-w-3xl text-white">
+              <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">Jelajahi Keindahan Bali</h1>
+              <p class="text-lg md:text-xl mb-8 font-light">Nikmati liburan impian dengan paket tur privat terjangkau dan pelayanan istimewa.</p>
+              <a href="#paket" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3.5 rounded-full transition shadow-lg inline-block">Lihat Paket</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1600&q=80');">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-4">
+            <div class="max-w-3xl text-white">
+              <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">Pengalaman Unik & Autentik</h1>
+              <p class="text-lg md:text-xl mb-8 font-light">Sopir ramah, mobil nyaman, dan itinerary fleksibel sesuai kebutuhan Anda.</p>
+              <a href="#paket" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3.5 rounded-full transition shadow-lg inline-block">Pilih Destinasi</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative" style="background-image: url('https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1600&q=80');">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-4">
+            <div class="max-w-3xl text-white">
+              <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">Momen Tak Terlupakan</h1>
+              <p class="text-lg md:text-xl mb-8 font-light">Buat kenangan manis bersama keluarga dan pasangan tercinta di pulau dewata.</p>
+              <a href="#kontak" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3.5 rounded-full transition shadow-lg inline-block">Konsultasi Gratis</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tombol Navigasi Slider -->
+      <div class="swiper-button-next !text-white"></div>
+      <div class="swiper-button-prev !text-white"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+  <!-- ==================== PAKET TOUR ==================== -->
+  <section id="paket" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold text-slate-900 mb-3">Paket Wisata Populer</h2>
+      <p class="text-slate-600">Pilihan paket perjalanan favorit dengan rute terbaik dan harga transparan tanpa biaya tersembunyi.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card Paket 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden h-56">
+            <!-- Ganti URL gambar di src -->
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Ubud & Kintamani Tour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 right-4 bg-amber-500 text-slate-900 font-bold text-xs px-3 py-1 rounded-full uppercase">Full Day</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Ubud & Kintamani Tour</h3>
+            <p class="text-slate-500 text-sm mb-4">Mengunjungi Tegalalang Rice Terrace, Kintamani Volcano View, Tirta Empul, dan Pasar Ubud.</p>
+            <div class="text-amber-600 font-extrabold text-2xl mb-4">
+              Rp 550.000 <span class="text-slate-400 text-xs font-normal">/ Mobil (Max 6 orang)</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6">
+          <a href="https://wa.me/6285726896443?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Ubud%20%26%20Kintamani" target="_blank" class="block text-center bg-slate-900 hover:bg-amber-600 text-white font-medium py-2.5 rounded-xl transition">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card Paket 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden h-56">
+            <!-- Ganti URL gambar di src -->
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80" alt="South Bali & Sunset Tour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 right-4 bg-amber-500 text-slate-900 font-bold text-xs px-3 py-1 rounded-full uppercase">Full Day</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-slate-900">South Bali & Sunset Tour</h3>
+            <p class="text-slate-500 text-sm mb-4">Pantai Pandawa, Melasti Beach, Pura Uluwatu, dan makan malam romantic sunset di Jimbaran.</p>
+            <div class="text-amber-600 font-extrabold text-2xl mb-4">
+              Rp 600.000 <span class="text-slate-400 text-xs font-normal">/ Mobil (Max 6 orang)</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6">
+          <a href="https://wa.me/6285726896443?text=Halo,%20saya%20tertarik%20dengan%20Paket%20South%20Bali" target="_blank" class="block text-center bg-slate-900 hover:bg-amber-600 text-white font-medium py-2.5 rounded-xl transition">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card Paket 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden h-56">
+            <!-- Ganti URL gambar di src -->
+            <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Nusa Penida Day Trip" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 right-4 bg-amber-500 text-slate-900 font-bold text-xs px-3 py-1 rounded-full uppercase">Island Trip</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Nusa Penida West Tour</h3>
+            <p class="text-slate-500 text-sm mb-4">Termasuk Tiket Fastboat PP, Kelingking Beach, Broken Beach, Angel Billabong, & Crystal Bay.</p>
+            <div class="text-amber-600 font-extrabold text-2xl mb-4">
+              Rp 750.000 <span class="text-slate-400 text-xs font-normal">/ Orang</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6">
+          <a href="https://wa.me/6285726896443?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Nusa%20Penida" target="_blank" class="block text-center bg-slate-900 hover:bg-amber-600 text-white font-medium py-2.5 rounded-xl transition">Pesan Sekarang</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== KEUNGGULAN ==================== -->
+  <section id="keunggulan" class="bg-white py-20 border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-3">Mengapa Memilih Kami?</h2>
+        <p class="text-slate-600">Prioritas kami adalah memberikan kenyamanan dan keamanan terbaik selama perjalanan liburan Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-slate-50 text-center">
+          <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Armada Nyaman & Bersih</h3>
+          <p class="text-slate-500 text-sm">Setiap kendaraan dalam kondisi prima, terawat, ber-AC dingin, dan selalu dibersihkan.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 text-center">
+          <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Sopir / Guide Profesional</h3>
+          <p class="text-slate-500 text-sm">Pengemudi berpengalaman, ramah, jujur, serta siap membantu mendokumentasikan foto Anda.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 text-center">
+          <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Harga Transparan</h3>
+          <p class="text-slate-500 text-sm">Harga pas tanpa biaya tersembunyi. Sudah termasuk BBM dan driver profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER / KONTAK ==================== -->
+  <footer id="kontak" class="bg-slate-900 text-slate-300 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <div>
+        <a href="#" class="text-2xl font-bold tracking-wide text-amber-500 flex items-center gap-2 mb-4">
+          <i class="fa-solid fa-compass"></i>
+          <span>NUSA<span class="text-white">TOUR</span></span>
+        </a>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Penyedia layanan sewa mobil & paket tour bali profesional dengan pelayanan ramah dan harga bersahabat.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold text-lg mb-4">Kontak Kami</h4>
+        <ul class="space-y-3 text-sm text-slate-400">
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-location-dot text-amber-500"></i>
+            <span>Jl. Raya Denpasar - Kuta No. 88, Bali</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-amber-500"></i>
+            <span>+62 857-2689-6443</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-amber-500"></i>
+            <span>info@nusatourbali.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold text-lg mb-4">Ikuti Kami</h4>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-amber-500 hover:text-slate-900 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-amber-500 hover:text-slate-900 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-amber-500 hover:text-slate-900 flex items-center justify-center transition"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 mt-12 pt-6 text-center text-xs text-slate-500">
+      &copy; 2026 Nusa Tour Bali. All rights reserved.
+    </div>
+  </footer>
+
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <!-- SwiperJS JS (Slider) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Inisialisasi Slider Hero
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    // Toggle Menu Mobile
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
